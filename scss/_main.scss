@@ -1,0 +1,43 @@
+// ****** main ******
+$fuente-general: 'Raleway',sans-serif;
+.mainContent{
+    font-family:$fuente-general;
+    grid-area: main;
+    text-align: center;
+    display: grid;
+    font-style: unset;
+        h1{
+            font-size: 4rem;
+            text-decoration: underline;
+        }
+        h2{
+            font-size: 4rem;
+            color: #8c5b00;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        .mainFoto{
+            height: 60rem;
+            width: 113rem;
+            display:block;
+            margin: auto;
+        }   
+        p{
+            font-size: 1.5rem;
+        }  
+        .tablaContacto{
+            text-align: center;
+            font-size: 2rem;
+            tr{
+            @extend .tablaContacto
+            }
+        }
+        .formContacto{
+            text-align: center;
+            font-size: 3rem;
+            .formulario{
+            @extend .formContacto
+            }
+        }
+}

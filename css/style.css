@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.Copy {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800; }
+
+.headerGrid {
+  grid-area: header;
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  background: linear-gradient(90deg, #020024 0%, #e6e5af 0%, #cd9d43 100%); }
+  .headerGrid .headerGrid__logo {
+    height: 20rem;
+    width: 40rem;
+    background-color: #8c5b00;
+    padding: 0.3rem; }
+  .headerGrid .headerGrid__navbar {
+    display: inline-block;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #020024 0%, #e6e5af 0%, #cd9d43 100%); }
+    .headerGrid .headerGrid__navbar nav {
+      background: linear-gradient(90deg, #020024 0%, #e6e5af 0%, #cd9d43 100%); }
+    .headerGrid .headerGrid__navbar li {
+      color: black; }
+      .headerGrid .headerGrid__navbar li a {
+        text-decoration: unset;
+        color: black;
+        font-size: 2rem;
+        padding: 0,5rem;
+        margin-left: auto;
+        margin-right: 15rem;
+        color: black; }
+        .headerGrid .headerGrid__navbar li a :hover {
+          background-color: #cd9d43;
+          color: black;
+          padding: 0rem; }
+  .headerGrid .headerGrid__redes {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .headerGrid .headerGrid__redes li img {
+      display: block;
+      margin-left: auto;
+      margin-right: 10rem;
+      top: 10rem;
+      height: 5rem;
+      width: 5rem;
+      text-decoration: none;
+      color: #cd9d43;
+      border-top-left-radius: 50% 50%;
+      border-top-right-radius: 50% 50%;
+      border-bottom-right-radius: 50% 50%;
+      border-bottom-left-radius: 50% 50%; }
+      .headerGrid .headerGrid__redes li img :hover {
+        background-color: #cd9d43;
+        color: black; }
+
+#header_flex {
+  display: flex;
+  flex: 1;
+  margin-top: 5rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10rem; }
+
+.mainContent {
+  font-family: "Raleway", sans-serif;
+  grid-area: main;
+  text-align: center;
+  display: grid;
+  font-style: unset; }
+  .mainContent h1 {
+    font-size: 4rem;
+    text-decoration: underline; }
+  .mainContent h2 {
+    font-size: 4rem;
+    color: #8c5b00; }
+  .mainContent h3 {
+    font-size: 2rem; }
+  .mainContent .mainFoto {
+    height: 60rem;
+    width: 113rem;
+    display: block;
+    margin: auto; }
+  .mainContent p {
+    font-size: 1.5rem; }
+  .mainContent .tablaContacto, .mainContent .tablaContacto tr {
+    text-align: center;
+    font-size: 2rem; }
+  .mainContent .formContacto, .mainContent .formContacto .formulario {
+    text-align: center;
+    font-size: 3rem; }
+
+.footerGrid {
+  grid-area: footer;
+  display: grid;
+  font-family: "Raleway", sans-serif; }
+  .footerGrid ol, .footerGrid .ubicacion p {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    list-style: none; }
+    .footerGrid ol .contactos img, .footerGrid .ubicacion p .contactos img {
+      height: 3rem;
+      width: 3rem;
+      border-top-left-radius: 50% 50%;
+      border-top-right-radius: 50% 50%;
+      border-bottom-right-radius: 50% 50%;
+      border-bottom-left-radius: 50% 50%; }
+    .footerGrid ol li, .footerGrid .ubicacion p li {
+      font-size: 1.5rem;
+      font-weight: 300;
+      list-style: none;
+      text-align: justify; }
+  .footerGrid ul {
+    font-size: 2.5rem;
+    font-weight: 300;
+    list-style: none; }
+    .footerGrid ul li {
+      font-size: 1.5rem;
+      font-weight: 300;
+      list-style: none; }
+      .footerGrid ul li img {
+        background-color: #8c5b00;
+        padding: 0.3rem; }
+  .footerGrid .ubicacion iframe {
+    background-color: #8c5b00;
+    padding: 0.3rem; }
+
+#footerFlex {
+  display: flex;
+  flex: 1;
+  margin-top: 3rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem; }
+
+.container {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, #020024 0%, #e6e5af 0%, #cd9d43 100%);
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%; }
+  .footerGrid {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly; } }

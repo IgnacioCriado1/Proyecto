@@ -1,0 +1,64 @@
+// ******* footer *******
+$fuente-general: 'Raleway',sans-serif;
+.footerGrid{
+    grid-area: footer;
+    display: grid;
+    font-family: $fuente-general;
+    ol{
+        font-size: 2.5rem;
+        font-style:normal;
+        font-weight: 600;
+        list-style: none;
+            .contactos{
+                img{
+                    height: 3rem;
+                    width: 3rem;
+                    border-top-left-radius: 50% 50%;
+                    border-top-right-radius: 50% 50%;
+                    border-bottom-right-radius: 50% 50%;
+                    border-bottom-left-radius: 50% 50%;
+                }
+            }
+            li{
+                font-size: 1.5rem;
+                font-weight: 300;
+                list-style: none;
+                text-align: justify;
+            }
+    }
+    ul{
+        font-size: 2.5rem;
+        font-weight: 300;
+        list-style: none;
+        li{
+            font-size: 1.5rem;
+            font-weight: 300;
+            list-style: none;
+            img{
+                background-color: #8c5b00;
+                padding: 0.3rem;
+            }
+        }
+    }
+    .ubicacion{
+        p{
+            @extend ol
+        }
+        iframe{
+            background-color: #8c5b00;
+            padding: 0.3rem;
+        }
+    }
+}
+
+#footerFlex{
+    display: flex;
+    flex: 1;
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem;
+        // .flexRow{
+        //     @extend #footerFlex
+        // }
+    }
